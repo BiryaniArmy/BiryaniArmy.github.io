@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"> <!-- Add a new font -->
     <meta property="og:title" content="Biryani Army Server Information">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:description"
         content="The detailed information/rules about the server called Biryani Army Make sure to read it to know more about the server.">
     <meta property="og:image" content="BA.jpg">
@@ -76,11 +77,18 @@
 }
 
         /* Add the following styles for mobile responsiveness */
-        @media only screen and (max-width: 768px) {
-            .topics {
-                display: none;
-            }
-
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    .navbar {
+        flex-direction: column;
+    }
+    .content {
+        margin: 20px;
+        max-width: 90%;
+    }
+}
             .content {
                 margin-left: 1cm;
                 margin-right: 1cm;
